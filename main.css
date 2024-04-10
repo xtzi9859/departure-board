@@ -1,0 +1,96 @@
+@font-face {
+	font-family: KCJIS;
+	src: url(/font/KikaiChokokuJIS-Md.otf);
+}
+@font-face {
+	font-family: UDEVG;
+	src: url(/font/UDEVGothicJPDOC-Regular.ttf);
+}
+@font-face {
+	font-family: JRW;
+	src: url(/font/JRWest-SB.otf);
+}
+@font-face {
+	font-family: JNRSB;
+	src: url(/font/JNR-SB.otf);
+}
+* {
+	background-color: #333;
+	color: #ddc;
+	font-family: sans-serif;
+	scrollbar-color: #CA6A1F #354F33 ;
+}
+::-webkit-scrollbar{
+	background-color: #354F33;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #CA6A1F;
+}
+html {
+	background-color: darkslategray;
+	scrollbar-width: 5px;
+}
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 5px solid gray;
+}
+h1 {
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	color: orange;
+}
+h2 {
+	text-align: left;
+	font-weight: bold;
+	font-size: large;
+	color: #5EB1B5;
+	border-bottom: 4px solid #7093BD;
+}
+li{
+	text-align: left;
+}
+
+a {
+	color: coral;
+}
+
+header{
+	font-size: small;
+	border-bottom: 2px solid gray;
+	margin-bottom: 5px;
+	text-align: left;
+}
+header > #breadcrumbs{
+	color: yellowgreen;
+	margin-right: 0.5em;
+}
+header a:link, header a:visited, header a:hover{
+	color: yellowgreen;
+	text-decoration: none;
+}
+header > #pagetitle{
+	color: coral;
+}
+
+footer p{
+	text-align: right;
+}
+.opt_hide {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	border: solid 2px gainsboro;
+	text-align: right;
+}
+th, td {
+	border: solid 1px gainsboro;
+	padding: 2px;
+}
+th {
+	background-color:#354F33
+}

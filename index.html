@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>足利駅 発車標</title>
+		<link rel="stylesheet" href="disp.css">
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script src="disp.js"></script>
+	</head>
+	<body>
+		<div id="disp">
+
+		<!-- 裏 -->
+		<div id="back"></div>
+
+		<!-- 下り 1行目 -->
+		<img class="out row1 type" src="type/local.png">
+		<img class="out row1 h1" src="num/2.png">
+		<img class="out row1 h0" src="num/1.png">
+		<img class="out row1 cln" src="colon.png">
+		<img class="out row1 m1" src="num/4.png">
+		<img class="out row1 m0" src="num/1.png">
+		<img class="out row1 dest" src="dest/yama.png">
+		<img class="out row1 cars" src="cars/4.png">
+
+		<!-- 下り 2行目 -->
+		<img class="out row2 type" src="type/last.png">
+		<img class="out row2 h1" src="num/2.png">
+		<img class="out row2 h0" src="num/2.png">
+		<img class="out row2 cln" src="colon.png">
+		<img class="out row2 m1" src="num/4.png">
+		<img class="out row2 m0" src="num/4.png">
+		<img class="out row2 dest" src="dest/yama.png">
+		<img class="out row2 cars" src="cars/6.png">
+
+		<img class="out row2 msg info" src="coming.gif">
+		<img class="out row2 marker info" src="marker.png">
+
+		<!-- 上り 1行目 -->
+		<img class="in row1 type" src="type/last.png">
+		<img class="in row1 h1" src="num/2.png">
+		<img class="in row1 h0" src="num/2.png">
+		<img class="in row1 cln" src="colon.png">
+		<img class="in row1 m1" src="num/1.png">
+		<img class="in row1 m0" src="num/2.png">
+		<img class="in row1 dest" src="dest/taka.png">
+		<img class="in row1 cars" src="cars/4.png">
+
+		<!-- 上り 2行目 -->
+		<img class="in row2 type" src="type/local.png">
+		<img class="in row2 h1" src="num/2.png">
+		<img class="in row2 h0" src="num/3.png">
+		<img class="in row2 cln" src="colon.png">
+		<img class="in row2 m1" src="num/0.png">
+		<img class="in row2 m0" src="num/1.png">
+		<img class="in row2 dest" src="dest/kiri.png">
+		<img class="in row2 cars" src="cars/6.png">
+
+		<img class="in row2 msg info" src="trainpos.png">
+		<img class="in row2 marker info" src="marker.png">
+
+		<!-- 枠 -->
+		<img id="frame" src="display.svg" width="490" height="81">
+
+		<!-- 時計 -->
+		<div id="hand_hour"></div>
+		<div id="hand_min"></div>
+		<div id="center"></div>
+	</div>
+</body>
+</html>

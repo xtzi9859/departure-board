@@ -1,0 +1,137 @@
+/*html {
+    background-color: #2a2a2a;
+    color: bisque;
+}*/
+
+@font-face {
+    font-family: jiskan16;
+    src: url(/font/JF-Dot-jiskan16.ttf);
+}
+
+img {
+    image-rendering: pixelated;
+    position: absolute;
+    background-color: transparent;
+}
+
+#disp {
+    transform-origin: left top;
+}
+
+#frame {
+    position: relative;
+    overflow: hidden;
+}
+
+#back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 490px;
+    height: 81px;
+    background-color: #2a2a2a;
+}
+
+#center {
+    position: absolute;
+    left: 245px;
+    top: 40.5px;
+    background-color: gray;
+    border-radius: 50%;
+    height: 2px;
+    width: 2px;
+    transform: translate(-1px, -1px);
+}
+
+#hand_hour {
+    position: absolute;
+    left: 244px;
+    top: 35.5px;
+    background-color: #ccff42;
+    height: 22px;
+    width: 2px;
+    transform-origin: center 5px;
+    transform: rotate(30deg);
+}
+
+#hand_min {
+    position: absolute;
+    left: 244px;
+    top: 35.5px;
+    background-color: #ccff42;
+    height: 36px;
+    width: 2px;
+    transform-origin: center 5px;
+}
+
+:root {
+    --type-width: 31px;
+    --num-width: 9px;
+    --cln-width: 2px;
+    --dest-width: 40px;
+    --cars-width: 27px;
+
+    --type-left: 0px;
+    --h1-left: calc(var(--type-width) + 4px);
+    --h0-left: calc(var(--h1-left) + var(--num-width) + 2px);
+    --cln-left: calc(var(--h0-left) + var(--num-width) + 2px);
+    --m1-left: calc(var(--cln-left) + var(--cln-width) + 2px);
+    --m0-left: calc(var(--m1-left) + var(--num-width) + 2px);
+    --dest-left: calc(var(--m0-left) + var(--num-width) + 4px);
+    --cars-left: calc(var(--dest-left) + var(--dest-width) + 4px);
+}
+
+/* 1行目 */
+.row1 {
+    top: 40px;
+}
+/* 2行目 */
+.row2 {
+    top: 56px;
+}
+
+/* 種別, 情報 */
+.type, .msg {
+    left: var(--type-left);
+}
+/* 時刻 */
+.h1 {
+    left: var(--h1-left);
+}
+.h0 {
+    left: var(--h0-left);
+}
+.cln {
+    left: var(--cln-left);
+}
+.m1 {
+    left: var(--m1-left);
+}
+.m0 {
+    left: var(--m0-left); 
+}
+/* 行き先 */
+.dest {
+    left: var(--dest-left);
+}
+/* 両数 */
+.cars {
+    left: var(--cars-left);
+}
+
+/* 在線マーカー */
+.marker {
+    visibility: hidden;
+}
+
+/* カスタムメッセージ */
+.customMsg {
+    position: absolute;
+    font-size: 16px;
+    font-family: jiskan16;
+    width: max-content;
+    color: #ccff42;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
